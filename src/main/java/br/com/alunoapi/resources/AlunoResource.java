@@ -23,4 +23,7 @@ public class AlunoResource {
         return alunoDAO.fetchAll();
 
     }
+
+
+
 }

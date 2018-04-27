@@ -8,7 +8,6 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.PersistenceException;
 import java.util.List;
 
-@Repository
 public class AlunoDAO implements IAlunoDAO {
 
     @PersistenceContext
@@ -18,4 +17,5 @@ public class AlunoDAO implements IAlunoDAO {
     public List<Aluno> fetchAll() throws PersistenceException {
         return entityManager.createQuery("from Aluno").getResultList();
     }
+
 }
